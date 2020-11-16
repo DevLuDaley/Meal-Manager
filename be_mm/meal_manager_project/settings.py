@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from decouple import config
+# from be_mm import meal_manager_project, meal_manager_app
 # from meal_manager_project import meal_manager_app
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'meal_manager_project',
-    'meal_manager_app',
+    'be_mm.meal_manager_project',
+    'be_mm.meal_manager_app',
     'frontend',
     'rest_framework',
 ]
@@ -55,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'meal_manager_project.urls'
+ROOT_URLCONF = 'be_mm.meal_manager_project.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'meal_manager_project.wsgi.application'
+WSGI_APPLICATION = 'be_mm.meal_manager_project.wsgi.application'
 
 
 # Database

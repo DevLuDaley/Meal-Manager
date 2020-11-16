@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers, serializers, viewsets
 
-from meal_manager_app.models import Meal, Recipe, Ingredient, IngredientList
-from meal_manager_app.api import views, urls
+from be_mm.meal_manager_app.models import Meal, Recipe, Ingredient, IngredientList
+from be_mm.meal_manager_app.api import views, urls
 
 router = routers.DefaultRouter()
 router.register(r'meals', views.MealViewSet)
